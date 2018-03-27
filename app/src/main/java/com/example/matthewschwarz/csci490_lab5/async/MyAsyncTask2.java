@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * Created by matthewschwarz on 3/15/18.
  */
 
-public class MyAsyncTask2 extends AsyncTask<Void, Void, ArrayList<Person>{
+public class MyAsyncTask2 extends AsyncTask<Void, Void, ArrayList<Person>>{
     LabDatabase personDB;
     Context context;
 
@@ -41,5 +41,6 @@ public class MyAsyncTask2 extends AsyncTask<Void, Void, ArrayList<Person>{
     @Override
     protected ArrayList<Person> doInBackground(Void... voids){
         ArrayList<Person> persons = (ArrayList) personDB.personDao().getAllPersons();
+        return persons;
     }
 }

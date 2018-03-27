@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * Created by matthewschwarz on 3/15/18.
  */
-@Override
+
 public class PersonsActivity extends AppCompatActivity{
     ListView listView;
 
